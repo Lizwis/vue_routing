@@ -1,5 +1,5 @@
 <template>
-  <h1>{{ $route.params.id }}</h1>
+  <h3>Not Found!!</h3>
 </template>
 
 <script>

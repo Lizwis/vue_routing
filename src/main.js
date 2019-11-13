@@ -3,6 +3,8 @@ import App from './App.vue'
 
 import HelloWorld from './components/HelloWorld'
 import Tasks from './components/Tasks'
+import User from './components/User'
+import NotFound from './components/NotFound'
 
 
 import VueRouter from 'vue-router'
@@ -13,7 +15,8 @@ const router = new VueRouter({
   routes: [
     { path: '/', component: HelloWorld },
     { path: '/tasks', component: Tasks },
-    { path: '/user/:id', component: Tasks }
+    { path: '/user/:id', component: User },
+    { path: '*', component: NotFound }
   ],
   mode: 'history'
 })
